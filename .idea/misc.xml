@@ -3,16 +3,19 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="app/src/main/res/drawable/ic_baseline_calendar_today_24.xml" value="0.172" />
         <entry key="app/src/main/res/drawable/ic_baseline_email_24.xml" value="0.175" />
         <entry key="app/src/main/res/drawable/ic_baseline_offline_pin_24.xml" value="0.175" />
         <entry key="app/src/main/res/drawable/ic_baseline_person_24.xml" value="0.175" />
         <entry key="app/src/main/res/drawable/ic_baseline_person_add_24.xml" value="0.175" />
         <entry key="app/src/main/res/drawable/ic_baseline_person_pin_24.xml" value="0.175" />
+        <entry key="app/src/main/res/drawable/ic_baseline_track_changes_24.xml" value="0.172" />
         <entry key="app/src/main/res/drawable/splash_bg.xml" value="0.177" />
-        <entry key="app/src/main/res/layout/activity_home.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_home.xml" value="0.22" />
         <entry key="app/src/main/res/layout/activity_log_in.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.1578125" />
         <entry key="app/src/main/res/layout/activity_sign_up.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/fragment_plan.xml" value="0.22" />
         <entry key="app/src/main/res/menu/bottom_nav_menu.xml" value="0.1" />
       </map>
     </option>

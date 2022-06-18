@@ -54,7 +54,7 @@ class LogInActivity : AppCompatActivity() {
             error = true
 
     }
-        if (error){
+        if (!error){
             startActivity(Intent(this,HomeActivity::class.java))
             finish()
         }
