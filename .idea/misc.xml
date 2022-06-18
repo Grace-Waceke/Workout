@@ -16,6 +16,8 @@
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.1578125" />
         <entry key="app/src/main/res/layout/activity_sign_up.xml" value="0.1" />
         <entry key="app/src/main/res/layout/fragment_plan.xml" value="0.22" />
+        <entry key="app/src/main/res/layout/fragment_profile.xml" value="0.19322916666666667" />
+        <entry key="app/src/main/res/layout/fragment_track.xml" value="0.19322916666666667" />
         <entry key="app/src/main/res/menu/bottom_nav_menu.xml" value="0.1" />
       </map>
     </option>
