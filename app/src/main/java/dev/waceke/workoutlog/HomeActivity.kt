@@ -34,9 +34,8 @@ lateinit var binding: ActivityHomeBinding
                     true
                 }
                 R.id.Track -> {
-                    val transaction = supportFragmentManager.beginTransaction()
-                    transaction.replace(R.id.fcvHome, PlanFragment())
-                    transaction.commit()
+                   supportFragmentManager.beginTransaction()
+                    .replace(R.id.fcvHome, PlanFragment()).commit()
                     true
                 }
                 R.id.Profile -> {
