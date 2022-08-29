@@ -1,10 +1,11 @@
-package dev.waceke.workoutlog
+package dev.waceke.workoutlog.ui
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import dev.waceke.workoutlog.R
 
 
 class PlanFragment : Fragment() {

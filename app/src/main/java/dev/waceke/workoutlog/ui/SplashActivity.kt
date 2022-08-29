@@ -1,4 +1,4 @@
-package dev.waceke.workoutlog
+package dev.waceke.workoutlog.ui
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity

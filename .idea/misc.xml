@@ -12,9 +12,9 @@
         <entry key="app/src/main/res/drawable/ic_baseline_track_changes_24.xml" value="0.172" />
         <entry key="app/src/main/res/drawable/splash_bg.xml" value="0.177" />
         <entry key="app/src/main/res/layout/activity_home.xml" value="0.22" />
-        <entry key="app/src/main/res/layout/activity_log_in.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_log_in.xml" value="0.18" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.1578125" />
-        <entry key="app/src/main/res/layout/activity_sign_up.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_sign_up.xml" value="0.22" />
         <entry key="app/src/main/res/layout/fragment_plan.xml" value="0.22" />
         <entry key="app/src/main/res/layout/fragment_profile.xml" value="0.19322916666666667" />
         <entry key="app/src/main/res/layout/fragment_track.xml" value="0.19322916666666667" />

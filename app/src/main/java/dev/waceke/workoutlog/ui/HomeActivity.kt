@@ -1,12 +1,9 @@
-package dev.waceke.workoutlog
+package dev.waceke.workoutlog.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.LayoutInflater
-import androidx.fragment.app.FragmentContainerView
-import com.google.android.material.bottomnavigation.BottomNavigationView
+import dev.waceke.workoutlog.R
 import dev.waceke.workoutlog.databinding.ActivityHomeBinding
-import dev.waceke.workoutlog.databinding.ActivitySignUpBinding
 
 class HomeActivity : AppCompatActivity() {
 lateinit var binding: ActivityHomeBinding
