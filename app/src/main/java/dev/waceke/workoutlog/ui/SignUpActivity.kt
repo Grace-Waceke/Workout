@@ -7,8 +7,8 @@ import android.widget.Toast
 import dev.waceke.workoutlog.databinding.ActivitySignUpBinding
 import dev.waceke.workoutlog.models.RegisterRequest
 import dev.waceke.workoutlog.models.RegisterResponse
-import dev.waceke.workoutlog.retrofit.ApiClient
-import dev.waceke.workoutlog.retrofit.ApiInterface
+import dev.waceke.workoutlog.api.ApiClient
+import dev.waceke.workoutlog.api.ApiInterface
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response

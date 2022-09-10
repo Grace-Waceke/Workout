@@ -1,4 +1,4 @@
-package dev.waceke.workoutlog.retrofit
+package dev.waceke.workoutlog.api
 
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
