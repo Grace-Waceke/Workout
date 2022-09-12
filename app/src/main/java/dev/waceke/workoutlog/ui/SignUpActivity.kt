@@ -4,19 +4,24 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
+import androidx.activity.viewModels
+import androidx.lifecycle.Observer
 import dev.waceke.workoutlog.databinding.ActivitySignUpBinding
 import dev.waceke.workoutlog.models.RegisterRequest
 import dev.waceke.workoutlog.models.RegisterResponse
 import dev.waceke.workoutlog.api.ApiClient
 import dev.waceke.workoutlog.api.ApiInterface
+import dev.waceke.workoutlog.viewModel.UserViewModel
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
 
 class SignUpActivity : AppCompatActivity() {
     lateinit var binding: ActivitySignUpBinding
+    lateinit var userViewModel: UserViewModel
 
     override fun onCreate(savedInstanceState: Bundle?) {
+        val userViewModel: UserViewModel by viewModels()
         super.onCreate(savedInstanceState)
         binding = ActivitySignUpBinding.inflate(layoutInflater)
         setContentView(binding.root)
@@ -66,9 +71,24 @@ class SignUpActivity : AppCompatActivity() {
     {
         val registerRequest = RegisterRequest(firstname, lastname, email, phoneNumber, password)
         makeRegistrationRequest(registerRequest)
+
+        startActivity(Intent(this, LogInActivity::class.java))
+        userViewModel.registerUser(registerRequest)
             }
     }
+    override fun onResume(){
+        super.onResume()
+        userViewModel.registerResponseLiveData.observe(this, Observer { registerResponse ->
+            Toast.makeText(baseContext, registerResponse?.message, Toast.LENGTH_LONG).show()
+            startActivity(Intent(baseContext,LogInActivity::class.java))
+        })
 
+        userViewModel.registerErrorLiveData.observe(this, Observer { error->
+            Toast.makeText(baseContext,error,Toast.LENGTH_LONG).show()
+            startActivity(Intent(baseContext,LogInActivity::class.java))
+
+        })
+    }
     fun makeRegistrationRequest(registerRequest: RegisterRequest) {
         var ApiClient = ApiClient.buildApiClient(ApiInterface::class.java)
         var request = ApiClient.registerUser(registerRequest)
@@ -81,11 +101,11 @@ class SignUpActivity : AppCompatActivity() {
                 if (response.isSuccessful) {
                     var message = response.body()?.message
 
-                    Toast.makeText(baseContext, message, Toast.LENGTH_LONG).show()
+//                    Toast.makeText(baseContext, message, Toast.LENGTH_LONG).show()
 
                 } else {
                     val error = response.errorBody()?.toString()
-                    Toast.makeText(baseContext, error, Toast.LENGTH_LONG).show()
+//                    Toast.makeText(baseContext, error, Toast.LENGTH_LONG).show()
                 }
             }
 
